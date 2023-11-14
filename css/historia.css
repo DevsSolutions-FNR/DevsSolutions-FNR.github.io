@@ -1,0 +1,131 @@
+.ret-depoimentos{
+    position: relative;
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    background-color: #BCBCBC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Istok Web', sans-serif;
+    border-radius: 0px 5px 5px 0;
+    font-weight: 400;
+    top: 30px;
+    animation: moveDireita 2s, fadeIn 1s;
+}
+
+@keyframes moveDireita{
+    0% {left: -100px;}
+    100%{left: 0px;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1620px){
+    nav ul li a{
+        display: flex;
+        height: 0px;
+        padding: 15px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        right: 12rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 100px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 80px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+
+    .login-but{
+        position: relative;
+        right: 200px;
+        display: inline-block;
+        background-color: #6F6F6F;
+        color: white;
+        width: 90px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .reg-but{
+        position: relative;
+        right: 180px;
+        display: inline-block;
+        background-color: #6F6F6F;
+        color: white;
+        width: 90px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .container{
+        background-color: black;
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    .depoimento{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        height: 300px;
+        width: 240px;
+        background-color: #D9D9D9;
+        display: flex;
+        margin-left: 20rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 15px;
+        flex: 0 0 calc(33.33% - 320px);
+        margin-bottom: 50px;
+        position: relative;
+        top: 65px;
+        right: 150px;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .circle-dep{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    }
+
+    .container-depoimentos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 150px;
+    }
+
+    .container{
+        height: 130vh;
+    }
+}

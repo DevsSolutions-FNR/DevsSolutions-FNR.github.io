@@ -1,0 +1,164 @@
+.ret-contato{
+    position: relative;
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    background-color: #BCBCBC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Istok Web', sans-serif;
+    border-radius: 0px 5px 5px 0;
+    font-weight: 600;
+    top: 30px;
+    animation: moveDireita 2s, fadeIn 1s;
+}
+
+h2{
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+@keyframes moveDireita{
+    0% {left: -100px;}
+    100%{left: 0px;}
+}
+
+.nome1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.nome_form{
+    width: 250px; 
+    height: 30px; 
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.mail{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.mail_form{
+    width: 250px; 
+    height: 30px; 
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.mensagem{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.mensagem1{
+    width: 250px; 
+    height: 30px; 
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.enviar{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.enviar:hover{
+    background-color: #BCBCBC;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+input{
+    font-size: 17px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1620px){
+    nav ul li a{
+        display: flex;
+        height: 0px;
+        padding: 15px;
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        right: 12rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 100px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 80px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+
+    .login-but{
+        position: relative;
+        right: 200px;
+        display: inline-block;
+        background-color: #6F6F6F;
+        color: white;
+        width: 90px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .reg-but{
+        position: relative;
+        right: 180px;
+        display: inline-block;
+        background-color: #6F6F6F;
+        color: white;
+        width: 90px;
+        height: 40px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .container{
+        background-color: black;
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+    
+}
