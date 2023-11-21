@@ -55,6 +55,118 @@
     animation: fadeIn 3s;
 }
 
+.desc{
+    position: relative;
+    left: 40rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 10px;
+    animation: moveUp 2s, fadeIn 3s;
+}
+
+@media screen and (min-width: 1621px) and (max-width: 1920px){
+    
+        .cigarro-img{
+            position: absolute;
+            transform: scaleX(-1);
+            height: 500px;
+            animation: fadeIn 3s;
+        }
+    
+        .apoie{
+            color: white;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-style: italic;
+            text-align: left;
+            left: 30rem;
+            padding-top: 50px;
+            font-size: 60px;
+            position: relative;
+            animation: moveDown 2s;
+        }
+    
+        .button-see{
+            display: inline-block;
+            background-color: #6F6F6F;
+            color: white;
+            width: 130px;
+            height: 60px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+            left: 30rem;
+            position: relative;
+            font-size: 15px;
+            animation: moveUp 1s, fadeIn 3s;
+        }
+    
+        nav ul li a{
+            display: flex;
+            height: 0px;
+            padding: 15px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+            position: relative;
+            right: 15rem;
+            font-family: 'Istok Web', sans-serif;
+        }
+    
+        .logo{
+            width: 100px;
+            height: auto;
+            display: flex;
+            position: relative;
+            top: 80px;
+            left: -30px;
+            justify-content: left;
+            animation: moveRight 1s, fadeIn 1s;
+        }
+        
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+}
+
+        .login-but{
+            position: relative;
+            right: 230px;
+            display: inline-block;
+            background-color: #6F6F6F;
+            color: white;
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .reg-but{
+            position: relative;
+            right: 220px;
+            display: inline-block;
+            background-color: #6F6F6F;
+            color: white;
+            width: 90px;
+            height: 40px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container{
+            background-color: black;
+            height: 100vh;
+            width: 110vw;
+            margin-left: -10px;
+            margin-top: -15px;
+        }   
+
+    }
+
 @media screen and (min-width: 1024px) and (max-width: 1620px){
 
     .cigarro-img{
@@ -70,7 +182,7 @@
         font-weight: 700;
         font-style: italic;
         text-align: left;
-        margin-left: 50rem;
+        margin-left: 40rem;
         padding-top: 50px;
         font-size: 60px;
         position: relative;
@@ -85,10 +197,10 @@
         height: 60px;
         border-radius: 10px;
         font-family: 'Montserrat', sans-serif;
-        margin-left:50rem;
+        margin-left:40rem;
         position: relative;
         font-size: 15px;
-        animation: moveUp 1s, fadeIn 3s;
+        animation: moveUp 4s, fadeIn 3s;
     }
 
     nav ul li a{

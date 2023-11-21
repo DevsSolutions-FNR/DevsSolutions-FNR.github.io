@@ -99,3 +99,23 @@ nav ul li a:hover{
     width: 110vw;
     margin-left: -10px;
 }
+
+.footer{
+    padding-left: 5px;
+    padding-top: 13px;
+    text-align: left;
+    position: relative;
+    right: 7px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d9d9d9;
+    height: 30px;
+    width: 105%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
