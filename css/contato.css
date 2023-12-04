@@ -1,26 +1,154 @@
-.ret-contato{
-    position: relative;
-    height: 80px;
-    width: 200px;
-    text-align: center;
-    background-color: #BCBCBC;
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.center{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-family: 'Istok Web', sans-serif;
-    border-radius: 0px 5px 5px 0;
-    font-weight: 600;
-    top: 30px;
-    animation: moveDireita 2s, fadeIn 1s;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding:0 2%;
 }
 
-h2{
-    color: white;
-    font-family: 'Istok Web', sans-serif;
-    font-weight: 400;
-    padding-left: 40px;
-    padding-top: 30px;
+.search-bar{
+    position: relative;
+    left: 50px;
+    width: 250px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid #0000;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.search-bar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+.search-bar input::placeholder{
+    color: #000000;
+}
+.search-bar button i{
+    font-size: 22px;
+}
+
+.translucent-box {
+    position: relative;
+    top: 90px;
+    width: 380px;
+    height: 500px;
+    right: auto;
+    left: 530px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 25px;
+    opacity: 70%;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+}
+
+.backgroud-color-sobre{
+    background-color: black;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.form-value{
+    position: relative;
+    padding: 10vh;
+    left: 580px;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: black;
+}
+
+.input-box{
+    position: relative;
+    width: 15%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:focus~label {
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1em;
+    color: black;
+    line-height: 57px;
+}
+
+
+.btn{
+    width: 15%;
+    height: 45px;
+    background: #A4AC86;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: white;
+    color: black;
+    transition: 0.5s all;
 }
 
 @keyframes moveDireita{
@@ -28,68 +156,6 @@ h2{
     100%{left: 0px;}
 }
 
-.nome1{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 15px;
-    font-size: 20px;
-}
-
-.nome_form{
-    width: 250px; 
-    height: 30px; 
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-.mail{
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.mail_form{
-    width: 250px; 
-    height: 30px; 
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-.mensagem{
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 15px;
-    color: white;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.mensagem1{
-    width: 250px; 
-    height: 30px; 
-    margin-left: 20px;
-    border-radius: 10px;
-}
-
-.enviar{
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-}
-
-.enviar:hover{
-    background-color: #BCBCBC;
-    color: black;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-::placeholder{
-    font-size: 15px;
-}
 
 input{
     font-size: 17px;
@@ -97,23 +163,23 @@ input{
 
 @media screen and (min-width: 1024px) and (max-width: 1620px){
     nav ul li a{
+        top: 30px;
         display: flex;
         height: 0px;
         padding: 15px;
-        margin-right: 10px;
         text-decoration: none;
-        color: black;
+        color: white;
         position: relative;
-        right: 12rem;
+        right: 10rem;
         font-family: 'Istok Web', sans-serif;
     }
 
     .logo{
-        width: 100px;
+        width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 80px;
+        top: 95px;
         left: -30px;
         justify-content: left;
         animation: moveRight 1s, fadeIn 1s;
@@ -128,37 +194,25 @@ input{
         0% {left: -80px;}
         100% {left: -30px;}
     }
-
-    .login-but{
-        position: relative;
-        right: 200px;
-        display: inline-block;
-        background-color: #6F6F6F;
-        color: white;
-        width: 90px;
-        height: 40px;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .reg-but{
-        position: relative;
-        right: 180px;
-        display: inline-block;
-        background-color: #6F6F6F;
-        color: white;
-        width: 90px;
-        height: 40px;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
     .container{
-        background-color: black;
+        background-image: url(../img/bg1.jpg);
         height: 100vh;
         width: 110vw;
         margin-left: -10px;
         margin-top: -15px;
     }   
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 0rem;
+        width: 105%;
+    }
     
 }

@@ -13,7 +13,7 @@ nav ul li{
 
 nav{
     text-align: right;
-    background-color: #d9d9d9;
+    background-color: #A4AC86;
     width: 100%;
     height: 100px;
 }
@@ -21,16 +21,6 @@ nav{
 nav ul{
     position: relative;
     bottom: 80px;
-}
-
-nav ul li a{
-    display: flex;
-    height: 0px;
-    padding: 15px;
-    margin-right: 15px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Istok Web', sans-serif;
 }
 
 nav ul li a:hover{
@@ -44,7 +34,7 @@ nav ul li a:hover{
     display: flex;
     position: relative;
     top: 80px;
-    left: -40px;
+    left: px;
     justify-content: left;
     animation: moveRight 1s, fadeIn 1s;
 }
@@ -59,45 +49,13 @@ nav ul li a:hover{
     100% {left: -40px;}
 }
 
-.login-but{
-    display: inline-block;
-    background-color: #6F6F6F;
-    color: white;
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.reg-but{
-    display: inline-block;
-    background-color: #6F6F6F;
-    color: white;
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.login-but:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: aliceblue;
-    color: black;
-}
-
-.reg-but:hover{
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: aliceblue;
-    color: black;
-}
-
-.container{
-    background-color: black;
+.container {
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
     height: 100vh;
     width: 110vw;
     margin-left: -10px;
+    margin-top: -15px;
 }
 
 .footer{

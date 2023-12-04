@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/contato.css">
+    <link rel="icon" href="IMG/logo.png" type="image/png">
     <title>Controle do Tabaco - Contate-nos</title>
 </head>
 <body>
@@ -27,42 +28,40 @@
                     <li><a href="historia.html">História</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contato.html">Contato</a></li>
+                    <ul class="header"></ul>
+                    <div class="translucent-box">
+                    </div>
                 </ul>
             </nav>
         </header>
-        <section class="section-contato">
-            <div class="ret-contato">Contato</div>
-            <h2>Caso tenha quaisquer dúvidas em relação ao nosso
-                projeto de controle contra o tabaco, ou dicas sobre,<br>
-                entre em contato conosco preenchendo o formulário
-            </h3>
-            <table> <!-- Formulário de contato -->
-                <tr>
-                    <td><label for="nome" class="nome1">*Nome e Sobrenome:</label></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="nome" id="nome" class="nome_form" placeholder="John Doe" required></td>
-                </tr>
-                <tr>
-                    <td><label for="email" class="mail">*Email:</label></td>
-                </tr>
-                <tr>
-                    <td><input type="email" name="email" id="email" class="mail_form" placeholder="joao@hotmail.com..." required></td>
-                </tr>
-                <tr>
-                    <td><label for="suamensagem" class="mensagem">*Sua Mensagem:</label></td>
-                </tr>
-                <tr>
-                    <td><textarea id="suamensagem" class="mensagem1"></textarea>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                    <td><input type="submit" name="submit" class="enviar"></td>
-                </tr>
-            </table>
-        </section>
+        <div class="form-box Registerform"> 
+            <div class="form-value">
+                <span style="color: black;"><h2>Contato</h2></span>
+                    <h4>Entre em contato conosco!</h4>
+                    <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label for=""><span style="color: black;">Digite seu nome:</span></label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label for=""><span style="color: black;">Email:</span></label>
+                </div>
+                <div class="input-box">
+                    <ion-icon name="text"></ion-icon></span>
+                    <input type="text" required>
+                    <label for=""><span style="color: black;">Mensagem:</span></label>
+                </div>
+                <div class="remember-forgot"> 
+            <a href="obrigado.html"><button class="btn"><h4>Enviar</h4></button></a>  
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
-<footer class="footer">Projeto gerenciado por <a href="#">DevSolutions</a>.</footer>
+<footer class="footer">Projeto gerenciado por <a
+    href="https://henrique200330.wixsite.com/devssolutions">DevsSolutions</a> &copy 2023</footer>
 </html>

@@ -1,2 +1,3 @@
 # Front-End
-Linguagem de Marcação: HTML5 / CSS3
+<ul>Linguagem de Marcação: HTML5 / CSS3 <br>
+<ol>- JavaScript Utilizado

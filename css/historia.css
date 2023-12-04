@@ -22,23 +22,23 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1620px){
     nav ul li a{
+        top: 30px;
         display: flex;
         height: 0px;
         padding: 15px;
-        margin-right: 10px;
         text-decoration: none;
-        color: black;
+        color: white;
         position: relative;
         right: 12rem;
         font-family: 'Istok Web', sans-serif;
     }
 
     .logo{
-        width: 100px;
+        width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 80px;
+        top: 90px;
         left: -30px;
         justify-content: left;
         animation: moveRight 1s, fadeIn 1s;
@@ -54,32 +54,8 @@
         100% {left: -30px;}
     }
 
-    .login-but{
-        position: relative;
-        right: 200px;
-        display: inline-block;
-        background-color: #6F6F6F;
-        color: white;
-        width: 90px;
-        height: 40px;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .reg-but{
-        position: relative;
-        right: 180px;
-        display: inline-block;
-        background-color: #6F6F6F;
-        color: white;
-        width: 90px;
-        height: 40px;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
     .container{
-        background-color: black;
+        background-image: url(../img/bg1.jpg);
         height: 100vh;
         width: 110vw;
         margin-left: -10px;
@@ -90,19 +66,113 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         height: 300px;
-        width: 240px;
-        background-color: #D9D9D9;
+        width: 250px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
         display: flex;
         margin-left: 20rem;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         border-radius: 15px;
-        flex: 0 0 calc(33.33% - 320px);
+        flex: 15%;
         margin-bottom: 50px;
         position: relative;
         top: 65px;
-        right: 150px;
+        right: 160px;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .circle-dep{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    }
+
+    .container-depoimentos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 150px;
+    }
+
+    .container{
+        height: 130vh;
+    }
+}
+
+@media screen and (min-width: 1621px) and (max-width: 1920px){
+    nav ul li a{
+        top: 30px;
+        display: flex;
+        height: 0px;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        right: 13rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    .depoimento{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        height: 300px;
+        width: 250px;
+        background: white;
+        backdrop-filter: blur(20px);
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+        display: flex;
+        margin-left: 30rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 15px;
+        flex: 15%;
+        margin-bottom: 50px;
+        position: relative;
+        top: 65px;
+        right: 230px;
         text-align: center;
     }
 

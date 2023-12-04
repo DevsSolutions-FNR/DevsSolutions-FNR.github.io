@@ -1,5 +1,5 @@
-.apoie{
-    color: white;
+.apoie {
+    color: #000;
     font-family: 'Montserrat';
     font-weight: 700;
     font-style: italic;
@@ -12,22 +12,37 @@
 }
 
 @keyframes moveDown {
-    0% {bottom: 100px;}
-    100% {bottom: -0px;}
+    0% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: -0px;
+    }
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-@keyframes moveUp{
-    0% {top: 120px;}
-    100% {top: 0px;}
+@keyframes moveUp {
+    0% {
+        top: 120px;
+    }
+
+    100% {
+        top: 0px;
+    }
 
 }
 
-.button-see{
+.button-see {
     display: inline-block;
     background-color: #6F6F6F;
     color: white;
@@ -35,12 +50,12 @@
     height: 50px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
-    margin-left:50rem;
+    margin-left: 50rem;
     position: relative;
     animation: moveUp 1s, fadeIn 3s;
 }
 
-.button-see:hover{
+.button-see:hover {
     cursor: pointer;
     transition: 0.5s;
     background-color: aliceblue;
@@ -48,17 +63,16 @@
 
 }
 
-.cigarro-img{
+.cigarro-img {
     position: absolute;
-    transform: scaleX(-1);
     height: 300px;
     animation: fadeIn 3s;
 }
 
-.desc{
+.desc {
     position: relative;
-    left: 40rem;
-    color: white;
+    left: 45rem;
+    color: #000;
     font-family: sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -69,127 +83,31 @@
     animation: moveUp 2s, fadeIn 3s;
 }
 
-@media screen and (min-width: 1621px) and (max-width: 1920px){
-    
-        .cigarro-img{
-            position: absolute;
-            transform: scaleX(-1);
-            height: 500px;
-            animation: fadeIn 3s;
-        }
-    
-        .apoie{
-            color: white;
-            font-family: 'Montserrat';
-            font-weight: 700;
-            font-style: italic;
-            text-align: left;
-            left: 30rem;
-            padding-top: 50px;
-            font-size: 60px;
-            position: relative;
-            animation: moveDown 2s;
-        }
-    
-        .button-see{
-            display: inline-block;
-            background-color: #6F6F6F;
-            color: white;
-            width: 130px;
-            height: 60px;
-            border-radius: 10px;
-            font-family: 'Montserrat', sans-serif;
-            left: 30rem;
-            position: relative;
-            font-size: 15px;
-            animation: moveUp 1s, fadeIn 3s;
-        }
-    
-        nav ul li a{
-            display: flex;
-            height: 0px;
-            padding: 15px;
-            margin-right: 10px;
-            text-decoration: none;
-            color: black;
-            position: relative;
-            right: 15rem;
-            font-family: 'Istok Web', sans-serif;
-        }
-    
-        .logo{
-            width: 100px;
-            height: auto;
-            display: flex;
-            position: relative;
-            top: 80px;
-            left: -30px;
-            justify-content: left;
-            animation: moveRight 1s, fadeIn 1s;
-        }
-        
-        @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-}
+@media screen and (min-width: 1621px) and (max-width: 1920px) {
 
-        .login-but{
-            position: relative;
-            right: 230px;
-            display: inline-block;
-            background-color: #6F6F6F;
-            color: white;
-            width: 90px;
-            height: 40px;
-            border-radius: 10px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .reg-but{
-            position: relative;
-            right: 220px;
-            display: inline-block;
-            background-color: #6F6F6F;
-            color: white;
-            width: 90px;
-            height: 40px;
-            border-radius: 10px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .container{
-            background-color: black;
-            height: 100vh;
-            width: 110vw;
-            margin-left: -10px;
-            margin-top: -15px;
-        }   
-
-    }
-
-@media screen and (min-width: 1024px) and (max-width: 1620px){
-
-    .cigarro-img{
+    .cigarro-img {
         position: absolute;
-        transform: scaleX(-1);
+        left: 10rem;
+        top: 15rem;
         height: 500px;
         animation: fadeIn 3s;
     }
 
-    .apoie{
-        color: white;
+    .apoie {
+        color: #000;
         font-family: 'Montserrat';
         font-weight: 700;
         font-style: italic;
         text-align: left;
-        margin-left: 40rem;
+        left: 7rem;
         padding-top: 50px;
         font-size: 60px;
         position: relative;
         animation: moveDown 2s;
     }
 
-    .button-see{
+    .button-see {
+        left: 7rem;
         display: inline-block;
         background-color: #6F6F6F;
         color: white;
@@ -197,74 +115,128 @@
         height: 60px;
         border-radius: 10px;
         font-family: 'Montserrat', sans-serif;
-        margin-left:40rem;
         position: relative;
         font-size: 15px;
-        animation: moveUp 4s, fadeIn 3s;
+        animation: moveUp 2s, fadeIn 3s;
     }
 
-    nav ul li a{
+    nav ul li a {
         display: flex;
+        top: 45px;
         height: 0px;
         padding: 15px;
         margin-right: 10px;
         text-decoration: none;
         color: black;
         position: relative;
-        right: 12rem;
+        right: 15rem;
         font-family: 'Istok Web', sans-serif;
+        font-size: 18px;
     }
 
-    .logo{
+    .logo {
         width: 100px;
         height: auto;
         display: flex;
         position: relative;
-        top: 80px;
+        top: 100px;
         left: -30px;
         justify-content: left;
         animation: moveRight 1s, fadeIn 1s;
     }
-    
+
     @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-    
+
+    .desc {
+        position: relative;
+        left: 57rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1620px) {
+
+    .cigarro-img {
+        position: absolute;
+        height: 500px;
+        animation: fadeIn 3s;
+    }
+
+    .apoie {
+        color: #000;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-style: italic;
+        text-align: left;
+        margin-left: 45rem;
+        padding-top: 50px;
+        font-size: 60px;
+        position: relative;
+        animation: moveDown 2s;
+    }
+
+    .button-see {
+        display: inline-block;
+        background-color: #A4AC86;
+        color: white;
+        width: 130px;
+        height: 60px;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 45rem;
+        position: relative;
+        font-size: 15px;
+        animation: moveUp 4s, fadeIn 3s;
+    }
+
+    nav ul li a{
+        top: 30px;
+        display: flex;
+        height: 0px;
+        padding: 15px;
+        text-decoration: none;
+        color: aliceblue;
+        position: relative;
+        right: 10rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo {
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 88px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
     @keyframes moveRight {
-        0% {left: -80px;}
-        100% {left: -30px;}
-    }
+        0% {
+            left: -80px;
+        }
 
-    .login-but{
-        position: relative;
-        right: 200px;
-        display: inline-block;
-        background-color: #6F6F6F;
-        color: white;
-        width: 90px;
-        height: 40px;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
+        100% {
+            left: -30px;
+        }
     }
-    
-    .reg-but{
-        position: relative;
-        right: 180px;
-        display: inline-block;
-        background-color: #6F6F6F;
-        color: white;
-        width: 90px;
-        height: 40px;
-        border-radius: 10px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    .container{
-        background-color: black;
-        height: 100vh;
-        width: 110vw;
-        margin-left: -10px;
-        margin-top: -15px;
-    }   
 }
