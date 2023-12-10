@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/global.css">
     <link rel="stylesheet" type="text/css" href="./css/faq.css">
-    <link rel="icon" href="IMG/logo.png" type="image/png">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script defer src="./js/menu.js"></script>
     <title>Controle do Tabaco - Perguntas Frequentes</title>
 </head>
 
@@ -22,9 +23,17 @@
 <body>
     <div class="container">
         <header>
-            <nav>
-                <ul>
-                    <a href="index.html"><img src="./img/logo.png" alt="Logo Controle Tabaco" class="logo"></a>
+            <nav class="nav">
+                <button
+                class="btn-menu"
+                aria-label="Abrir Menu"
+                aria-haspopup="true"
+                aria-controls="menu"
+                aria-expanded="false"
+                >
+                Menu<span class="hamburger"></span>
+                </button>
+                <ul class="menu" id="menu" role="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="aprenda-mais.html">Aprenda mais</a></li>

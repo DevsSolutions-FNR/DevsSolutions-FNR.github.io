@@ -13,12 +13,7 @@
     font-weight: 400;
     top: 30px;
     left: 90px;
-    animation: moveDireita 2s, fadeIn 1s;
-}
-
-@keyframes moveDireita{
-    0% {left: -100px;}
-    100%{left: 90px;}
+    animation: none;
 }
 
 .container{
@@ -66,9 +61,547 @@
     transition: all 1s;
 }
 
+@media (min-width:320px) and (max-width:480px){
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
 
+    .menu a{
+    display: block;
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+    }
 
-@media screen and (min-width: 1024px) and (max-width: 1620px){
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        position: relative;
+        left: 25rem;
+        padding-top: 3rem;
+        font-family: sans-serif;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: white;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: 55px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: 55px;}
+    }
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    p{
+        text-align: center;
+    }
+
+    .circle-dep{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    }
+    
+    .container-faq{
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        height: 1000px 
+    }
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 78rem;
+        width: 105%;
+    }
+
+    .wrapper{
+        background-color: #d9d9d9;
+        margin-top: 100px;
+        margin-left: 7rem;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+        width: 50%;
+    }
+
+    .ret-faq{
+        position: relative;
+        top: 30px;
+        left: 35px;
+        animation: none;
+    }
+}
+
+@media (min-width:481px) and (max-width: 640px){
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a{
+    display: block;
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+    }
+
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        position: relative;
+        left: 34rem;
+        padding-top: 3rem;
+        font-family: sans-serif;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: white;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: 55px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: 55px;}
+    }
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    p{
+        text-align: center;
+    }
+
+    .circle-dep{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    }
+    
+    .container-faq{
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        height: 1000px 
+    }
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 78rem;
+        width: 105%;
+    }
+
+    .wrapper{
+        background-color: #d9d9d9;
+        margin-top: 100px;
+        margin-left: 8rem;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+        width: 50%;
+    }
+
+    .ret-faq{
+        position: relative;
+        top: 30px;
+        left: 35px;
+        animation: none;
+    }
+}
+
+@media (min-width:641px){
+
+    .ret-faq{
+        position: relative;
+        top: 30px;
+        left: 50px;
+        animation: none;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    nav ul li a{
+        top: 30px;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        right: 4rem;
+        text-decoration: none;
+        color: white;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: 55px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: 55px;}
+    }
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    p{
+        text-align: center;
+    }
+
+    .circle-dep{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    }
+    
+    .container-faq{
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        height: 1000px 
+    }
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 78rem;
+        width: 105%;
+    }
+
+    .wrapper{
+        background-color: #d9d9d9;
+        margin-top: 100px;
+        margin-left: 14rem;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+        width: 50%;
+    }
+}
+
+@media (min-width:961px){
+
+    .ret-faq{
+        position: relative;
+        top: 30px;
+        left: 65px;
+        animation: none;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    nav ul li a{
+        top: 30px;
+        display: flex;
+        padding: 15px;
+        position: relative;
+        right: 4rem;
+        text-decoration: none;
+        color: white;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: 55px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: 55px;}
+    }
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    p{
+        text-align: center;
+    }
+
+    .circle-dep{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    }
+    
+    .container-faq{
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        height: 1000px 
+    }
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 78rem;
+        width: 105%;
+    }
+}
+
+@media (min-width:1025px){
+
+    .ret-faq{
+        position: relative;
+        top: 30px;
+        left: 70px;
+        animation: none;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
     nav ul li a{
         top: 30px;
         display: flex;
@@ -151,33 +684,24 @@
         top: 78rem;
         width: 105%;
     }
-    
 }
 
+@media (min-width:1281px){
 
-@media screen and (min-width: 1621px) and (max-width: 1920px){
+    .ret-faq{
+        position: relative;
+        top: 30px;
+        left: 85px;
+        animation: none;
+    }
+
+    .btn-menu {
+        display: none;
+    }
 
     @keyframes moveDireita{
         0% {left: -100px;}
         100%{left: 100px;}
-    }
-
-    .ret-faq{
-        position: relative;
-        height: 80px;
-        width: 350px;
-        text-align: center;
-        background-color: #BCBCBC;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px;
-        font-family: 'Istok Web', sans-serif;
-        border-radius: 0px 5px 5px 0;
-        font-weight: 400;
-        top: 30px;
-        left: 100px;
-        animation: moveDireita 2s, fadeIn 1s;
     }
 
     nav ul li a{
@@ -264,5 +788,4 @@
         top: 78rem;
         width: 105%;
     }
-    
 }

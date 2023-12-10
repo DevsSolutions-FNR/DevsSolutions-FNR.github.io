@@ -39,7 +39,310 @@ ol{
     padding-left: 40px; 
 }
 
-@media (min-width:1025px) {
+@media (min-width:320px) and (max-width:480px)  { 
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.6875rem;
+        right: 0;
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a{
+    display: block;
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+    }
+
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        position: relative;
+        left: 23rem;
+        padding-top: 3rem;
+        font-family: sans-serif;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: white;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 190vh;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+    .img_cigarro1{
+        position: relative;
+        width: 35rem;
+        bottom: -5rem;
+        
+    }
+}
+
+@media (min-width:481px) and (max-width: 640px)  { 
+
+    .btn-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.6875rem;
+        right: 0;
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a{
+    display: block;
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+    }
+
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        position: relative;
+        left: 34rem;
+        padding-top: 3rem;
+        font-family: sans-serif;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: white;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 170vh;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+    .img_cigarro1{
+        position: relative;
+        width: 35rem;
+        bottom: -5rem;
+        
+    }
+ }
+
+@media (min-width:641px)  { 
+
+    .btn-menu {
+        display: none;
+    }
+
+    nav ul li a{
+        top: 30px;
+        display: flex;
+        padding: 15px;
+        margin-left: -40px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        right: 1rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 150vh;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+    .img_cigarro1{
+        position: relative;
+        width: 35rem;
+        bottom: -3rem;
+        
+    }
+ }
+
+@media (min-width:961px)  { 
+
+    .btn-menu {
+        display: none;
+    }
+
+
     nav ul li a{
         top: 30px;
         display: flex;
@@ -80,14 +383,19 @@ ol{
         margin-top: -15px;
     }   
     .img_cigarro1{
-        position: absolute;
+        position: relative;
         width: 35rem;
         bottom: -5rem;
         
     }
-}
+ }
 
-@media (min-width:1281px) {
+@media (min-width:1025px) {
+
+    .btn-menu {
+        display: none;
+    }
+
     nav ul li a{
         top: 30px;
         display: flex;
@@ -98,6 +406,59 @@ ol{
         position: relative;
         right: 1rem;
         font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 90px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 150vh;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+    .img_cigarro1{
+        position: relative;
+        width: 35rem;
+        bottom: -5rem;
+        
+    }
+}
+
+@media (min-width:1281px) {
+
+    .btn-menu {
+        display: none;
+    }
+
+   nav ul li a {
+    top: 30px;
+    display: flex;
+    padding: 15px;
+    margin-left: -40px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    right: 1rem;
+    font-family: 'Istok Web', sans-serif;
     }
 
     .logo{
@@ -134,8 +495,3 @@ ol{
         bottom: 20rem;
     }
 }
-
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }

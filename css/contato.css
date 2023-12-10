@@ -81,6 +81,7 @@
 }
 
 .form-box h2 {
+    font-family: sans-serif;
     font-size: 2em;
     color: black;
 }
@@ -95,6 +96,7 @@
 }
 
 .input-box label{
+    font-family: sans-serif;
     position: absolute;
     top: 50%;
     left: 5px;
@@ -161,16 +163,583 @@ input{
     font-size: 17px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1620px){
+@media (min-width:320px) and (max-width:480px){
+
+    .search-bar{
+        position: relative;
+        left: 50px;
+        width: 250px;
+        height: 45px;
+        background-color: transparent;
+        border: 2px solid #0000;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-bar input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .search-bar button{
+        width: 40px;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .search-bar input::placeholder{
+        color: #000000;
+    }
+    .search-bar button i{
+        font-size: 22px;
+    }
+    
+    .translucent-box {
+        position: relative;
+        top: 90px;
+        width: 380px;
+        height: 500px;
+        right: auto;
+        left: 530px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+    }
+    
+    .backgroud-color-sobre{
+        background-color: black;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    
+    .form-value{
+        position: relative;
+        padding: 10vh;
+        left: 80px;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .form-box h2 {
+        font-size: 2em;
+        color: black;
+    }
+    
+    .input-box{
+        position: relative;
+        width: 50%;
+        height: 50px;
+        border-bottom: 2px solid black;
+        margin: 30px 0;
+    
+    }
+    
+    .input-box label{
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: black;
+        font-weight: 500;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:focus~label {
+        top: -5px;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
+    
+    .input-box .icon{
+        position: absolute;
+        right: 8px;
+        font-size: 1em;
+        color: black;
+        line-height: 57px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a{
+    display: block;
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+    }
+
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        position: relative;
+        left: 23rem;
+        padding-top: 3rem;
+        font-family: sans-serif;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: white;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
     nav ul li a{
-        top: 30px;
+        display: none;
+    }
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 400vh;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }
+
+    .btn{
+        width: 30%;
+    }
+}
+
+@media (min-width:481px) and (max-width: 640px){
+
+    .search-bar{
+        position: relative;
+        left: 50px;
+        width: 250px;
+        height: 45px;
+        background-color: transparent;
+        border: 2px solid #0000;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-bar input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .search-bar button{
+        width: 40px;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .search-bar input::placeholder{
+        color: #000000;
+    }
+    .search-bar button i{
+        font-size: 22px;
+    }
+    
+    .translucent-box {
+        position: relative;
+        top: 90px;
+        width: 380px;
+        height: 500px;
+        right: auto;
+        left: 530px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+    }
+    
+    .backgroud-color-sobre{
+        background-color: black;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    
+    .form-value{
+        position: relative;
+        padding: 10vh;
+        left: 145px;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .form-box h2 {
+        font-size: 2em;
+        color: black;
+    }
+    
+    .input-box{
+        position: relative;
+        width: 40%;
+        height: 50px;
+        border-bottom: 2px solid black;
+        margin: 30px 0;
+    
+    }
+    
+    .input-box label{
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: black;
+        font-weight: 500;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:focus~label {
+        top: -5px;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
+    
+    .input-box .icon{
+        position: absolute;
+        right: 8px;
+        font-size: 1em;
+        color: black;
+        line-height: 57px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.6875rem;
+        left: 0;
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a{
+    display: block;
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+    font-family: 'Istok Web', sans-serif;
+    color: black;
+    }
+
+    .btn-menu {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+        padding: 1rem 0;
+        cursor: pointer;
+        position: relative;
+        left: 31rem;
+        padding-top: 3rem;
+        font-family: sans-serif;
+    }
+
+    .hamburger {
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .hamburger::after,
+    .hamburger::before {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: white;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .nav.active .menu {
+        height: calc(100vh - 4.6875rem);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .nav.active .hamburger {
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 400vh;
+        width: 100vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }
+
+    .btn{
+        width: 30%;
+    }
+}
+
+@media (min-width:641px){
+
+    .search-bar{
+        position: relative;
+        left: 50px;
+        width: 250px;
+        height: 45px;
+        background-color: transparent;
+        border: 2px solid #0000;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-bar input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .search-bar button{
+        width: 40px;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .search-bar input::placeholder{
+        color: #000000;
+    }
+    .search-bar button i{
+        font-size: 22px;
+    }
+    
+    .translucent-box {
+        position: relative;
+        top: 90px;
+        width: 380px;
+        height: 500px;
+        right: auto;
+        left: 530px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+    }
+    
+    .backgroud-color-sobre{
+        background-color: black;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    
+    .form-value{
+        position: relative;
+        padding: 10vh;
+        left: 145px;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .form-box h2 {
+        font-size: 2em;
+        color: black;
+    }
+    
+    .input-box{
+        position: relative;
+        width: 40%;
+        height: 50px;
+        border-bottom: 2px solid black;
+        margin: 30px 0;
+    
+    }
+    
+    .input-box label{
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: black;
+        font-weight: 500;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:focus~label {
+        top: -5px;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
+    
+    .input-box .icon{
+        position: absolute;
+        right: 8px;
+        font-size: 1em;
+        color: black;
+        line-height: 57px;
+    }
+
+    .btn_menu{
+        display: none;
+    }
+
+    nav ul li a{
+        top: 15px;
         display: flex;
         height: 0px;
         padding: 15px;
         text-decoration: none;
         color: white;
         position: relative;
-        right: 10rem;
+        right: 6rem;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -214,5 +783,552 @@ input{
         top: 0rem;
         width: 105%;
     }
+
+    .btn{
+        width: 40%;
+    }
+}
+
+@media (min-width:961px){
+    .btn_menu{
+        display: none;
+    }
+
+    nav ul li a{
+        top: 15px;
+        display: flex;
+        height: 0px;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        right: 7rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 95px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
     
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 0rem;
+        width: 105%;
+    }
+
+    .search-bar{
+        position: relative;
+        left: 50px;
+        width: 250px;
+        height: 45px;
+        background-color: transparent;
+        border: 2px solid #0000;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-bar input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .search-bar button{
+        width: 40px;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .search-bar input::placeholder{
+        color: #000000;
+    }
+    .search-bar button i{
+        font-size: 22px;
+    }
+    
+    .translucent-box {
+        position: relative;
+        top: 90px;
+        width: 380px;
+        height: 500px;
+        right: auto;
+        left: 530px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+    }
+    
+    .backgroud-color-sobre{
+        background-color: black;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    
+    .form-value{
+        position: relative;
+        padding: 10vh;
+        left: 275px;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .form-box h2 {
+        font-size: 2em;
+        color: black;
+    }
+    
+    .input-box{
+        position: relative;
+        width: 40%;
+        height: 50px;
+        border-bottom: 2px solid black;
+        margin: 30px 0;
+    
+    }
+    
+    .input-box label{
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: black;
+        font-weight: 500;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:focus~label {
+        top: -5px;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
+    
+    .input-box .icon{
+        position: absolute;
+        right: 8px;
+        font-size: 1em;
+        color: black;
+        line-height: 57px;
+    }
+}
+
+@media (min-width:1025px){
+    .btn_menu{
+        display: none;
+    }
+
+    nav ul li a{
+        top: 15px;
+        display: flex;
+        height: 0px;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        right: 9rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 95px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 0rem;
+        width: 105%;
+    }
+
+    .search-bar{
+        position: relative;
+        left: 50px;
+        width: 250px;
+        height: 45px;
+        background-color: transparent;
+        border: 2px solid #0000;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-bar input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .search-bar button{
+        width: 40px;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .search-bar input::placeholder{
+        color: #000000;
+    }
+    .search-bar button i{
+        font-size: 22px;
+    }
+    
+    .translucent-box {
+        position: relative;
+        top: 90px;
+        width: 380px;
+        height: 500px;
+        right: auto;
+        left: 530px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+    }
+    
+    .backgroud-color-sobre{
+        background-color: black;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    
+    .form-value{
+        position: relative;
+        padding: 10vh;
+        left: 285px;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .form-box h2 {
+        font-size: 2em;
+        color: black;
+    }
+    
+    .input-box{
+        position: relative;
+        width: 40%;
+        height: 50px;
+        border-bottom: 2px solid black;
+        margin: 30px 0;
+    
+    }
+    
+    .input-box label{
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: black;
+        font-weight: 500;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:focus~label {
+        top: -5px;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
+    
+    .input-box .icon{
+        position: absolute;
+        right: 8px;
+        font-size: 1em;
+        color: black;
+        line-height: 57px;
+    }
+}
+
+@media (min-width:1281px){
+
+    .btn_menu{
+        display: none;
+    }
+
+    nav ul li a{
+        top: 15px;
+        display: flex;
+        height: 0px;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        right: 12rem;
+        font-family: 'Istok Web', sans-serif;
+    }
+
+    .logo{
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 95px;
+        left: -30px;
+        justify-content: left;
+        animation: moveRight 1s, fadeIn 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @keyframes moveRight {
+        0% {left: -80px;}
+        100% {left: -30px;}
+    }
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 100vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
+
+    .footer{
+        padding-left: 5px;
+        padding-top: 13px;
+        text-align: left;
+        position: relative;
+        right: 7px;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9d9d9;
+        height: 30px;
+        top: 0rem;
+        width: 105%;
+    }
+
+    .search-bar{
+        position: relative;
+        left: 50px;
+        width: 250px;
+        height: 45px;
+        background-color: transparent;
+        border: 2px solid #0000;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .search-bar input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .search-bar button{
+        width: 40px;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+    .search-bar input::placeholder{
+        color: #000000;
+    }
+    .search-bar button i{
+        font-size: 22px;
+    }
+    
+    .translucent-box {
+        position: relative;
+        top: 90px;
+        width: 380px;
+        height: 500px;
+        right: auto;
+        left: 530px;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 25px;
+        opacity: 70%;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.5);
+    }
+    
+    .backgroud-color-sobre{
+        background-color: black;
+        width: 100%;
+        padding: 100px 0px;
+    }
+    
+    .form-value{
+        position: relative;
+        padding: 10vh;
+        left: 435px;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .form-box h2 {
+        font-size: 2em;
+        color: black;
+    }
+    
+    .input-box{
+        position: relative;
+        width: 40%;
+        height: 50px;
+        border-bottom: 2px solid black;
+        margin: 30px 0;
+    
+    }
+    
+    .input-box label{
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: black;
+        font-weight: 500;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:focus~label {
+        top: -5px;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
+    
+    .input-box .icon{
+        position: absolute;
+        right: 8px;
+        font-size: 1em;
+        color: black;
+        line-height: 57px;
+    }
 }
