@@ -20,7 +20,7 @@ nav{
 
 nav ul{
     position: relative;
-    bottom: 80px;
+    bottom: 5px;
 }
 
 nav ul li a:hover{
