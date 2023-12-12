@@ -484,17 +484,8 @@
         top: 20px;
         left: 10px;
         justify-content: left;
-        z-index: 1;
-        animation: none;
-    }   
-
-    .container{
-        background-image: url(../img/bg1.jpg);
-        height: 150vh;
-        width: 110vw;
-        margin-left: -10px;
-        margin-top: -15px;
-    }   
+        animation: moveRight 1s, fadeIn 1s;
+    }
 }
 
 @media (min-width:961px) {
