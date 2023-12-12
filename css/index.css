@@ -98,7 +98,7 @@
     font-size: 30px;
   }
 
-@media (min-width:320px) and (max-width:480px) {
+@media (min-width:320px) and (max-width:480px) { /* Finalizado */
 
     .menu {
         display: flex;
@@ -254,7 +254,7 @@
     }
 }
 
-@media (min-width:481px) and (max-width: 640px) {
+@media (min-width:481px) and (max-width: 640px) { /* Finalizado */
 
     .menu {
         display: flex;
@@ -407,7 +407,7 @@
     }   
 }
 
-@media (min-width:641px) {
+@media (min-width:641px) { /* Finalizado */
 
     .btn-menu {
         display: none;
@@ -441,6 +441,7 @@
         position: relative;
         left: 5rem;
         top: 0rem;
+        font-size: 18px;
         animation: none;
     }
 
@@ -454,7 +455,7 @@
         font-weight: 700;
         font-style: italic;
         text-align: left;
-        padding-top: 50px;
+        padding-top: 0px;
         font-size: 60px;
         animation: none;
     }
@@ -464,10 +465,11 @@
         display: flex;
         height: 0px;
         padding: 15px;
+        margin-left: -20px;
         text-decoration: none;
         color: aliceblue;
         position: relative;
-        left: 19rem;
+        left: 10rem;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -484,11 +486,20 @@
         top: 20px;
         left: 10px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
-    }
+        z-index: 1;
+        animation: none;
+    }   
+
+    .container{
+        background-image: url(../img/bg1.jpg);
+        height: 150vh;
+        width: 110vw;
+        margin-left: -10px;
+        margin-top: -15px;
+    }   
 }
 
-@media (min-width:961px) {
+@media (min-width:961px) { /* Finalizado */
 
     .btn-menu {
         display: none;
@@ -504,7 +515,7 @@
         left: 25rem;
         bottom: 3rem;
         animation: none;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .cigarro-img {
@@ -525,7 +536,7 @@
         font-style: italic;
         text-align: left;
         margin-left: 45rem;
-        padding-top: 50px;
+        padding-top: 0px;
         font-size: 60px;
         position: relative;
         animation: moveDown 2s;
@@ -555,6 +566,7 @@
         color: aliceblue;
         position: relative;
         left: 23rem;
+        font-size: 17px;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -569,7 +581,7 @@
         display: flex;
         position: relative;
         top: 20px;
-        left: 40px;
+        left: 0px;
         justify-content: left;
         z-index: 1;
         animation: none;
@@ -596,7 +608,7 @@
     }
 }
 
-@media (min-width:1025px) {
+@media (min-width:1025px) { /* Finalizado */
 
     .btn-menu {
         display: none;
@@ -610,7 +622,7 @@
         text-align: left;
         position: relative;
         left: 25rem;
-        bottom: 3rem;
+        bottom: 5rem;
         animation: none;
         font-size: 18px;
     }
@@ -634,9 +646,8 @@
         font-style: italic;
         text-align: left;
         margin-left: 45rem;
-        padding-top: 50px;
+        padding-top: 0px;
         font-size: 60px;
-        position: relative;
         animation: moveDown 2s;
     }
 
@@ -663,7 +674,7 @@
         text-decoration: none;
         color: aliceblue;
         position: relative;
-        left: 28rem;
+        left: 33rem;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -677,8 +688,8 @@
         height: auto;
         display: flex;
         position: relative;
-        top: 20px;
-        left: 40px;
+        top: 15px;
+        left: 0px;
         justify-content: left;
         z-index: 1;
         animation: none;
@@ -705,7 +716,7 @@
     }
 }
 
-@media (min-width:1281px) {
+@media (min-width:1281px) { /* Finalizado */
 
     .btn-menu {
         display: none;
@@ -721,6 +732,7 @@
         left: 65rem;
         bottom: 2rem;
         animation: none;
+        font-size: 20px;
     }
 
 
@@ -735,15 +747,15 @@
     .apoie {
         position: relative;
         left: 20rem;
+        bottom: 10rem;
         color: #000;
         font-family: 'Montserrat';
         font-weight: 700;
         font-style: italic;
         text-align: left;
         margin-left: 45rem;
-        padding-top: 50px;
+        padding-top: 0px;
         font-size: 60px;
-        position: relative;
         animation: moveDown 2s;
     }
 
@@ -758,7 +770,7 @@
         margin-left: 65rem;
         bottom: 3rem;
         position: relative;
-        font-size: 15px;
+        font-size: 17px;
         animation: none;
     }
 
@@ -770,7 +782,7 @@
         text-decoration: none;
         color: aliceblue;
         position: relative;
-        left: 78rem;
+        left: 86rem;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -779,16 +791,15 @@
         bottom: 85px;
     }
 
-    .logo {
+    .logo{
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 20px;
-        left: 0px;
+        top: 15px;
+        left: -10px;
         justify-content: left;
-        z-index: 1;
-        animation: none;
+        animation: moveRight 1s, fadeIn 1s;
     }
 
     @keyframes fadeIn {
@@ -807,7 +818,7 @@
         }
 
         100% {
-            left: -30px;
+            left: -10px;
         }
     }
 }

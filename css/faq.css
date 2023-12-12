@@ -11,8 +11,8 @@
     font-family: 'Istok Web', sans-serif;
     border-radius: 0px 5px 5px 0;
     font-weight: 400;
-    top: 30px;
-    left: 90px;
+    bottom: 30px;
+    left: 80px;
     animation: none;
 }
 
@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 20px;
     color: #111130;
     font-weight: 500;
     border: none;
@@ -53,7 +53,7 @@
 }
 .content{
     position: relative;
-    font-size: 14px;
+    font-size: 18px;
     text-align: justify;
     line-height: 30px;
     height: 0;
@@ -61,7 +61,25 @@
     transition: all 1s;
 }
 
-@media (min-width:320px) and (max-width:480px){
+@media (min-width:320px) and (max-width:480px){ /* Finalizado */
+
+    .nav{
+        position: relative;
+        bottom: 70px;
+    }
+
+    .logo {
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 10px;
+        left: 34px;
+        justify-content: left;
+        z-index: 1;
+        animation: none;
+    }
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -150,18 +168,6 @@
         bottom: 85px;
     }
 
-    .logo {
-        width: 100px;
-        height: auto;
-        display: flex;
-        position: relative;
-        top: 10px;
-        left: 10px;
-        justify-content: left;
-        z-index: 1;
-        animation: none;
-    }
-
     @keyframes fadeIn {
         0% {opacity: 0;}
         100% {opacity: 1;}
@@ -195,7 +201,7 @@
     .container-faq{
         background-image: url(../img/bg1.jpg);
         background-size: cover;
-        height: 1000px 
+        height: 3200px 
     }
 
     .footer{
@@ -207,7 +213,7 @@
         font-family: 'Montserrat', sans-serif;
         background-color: #d9d9d9;
         height: 30px;
-        top: 78rem;
+        top: 216rem;
         width: 105%;
     }
 
@@ -229,7 +235,7 @@
     }
 }
 
-@media (min-width:481px) and (max-width: 640px){
+@media (min-width:481px) and (max-width: 640px){ /* Finalizado */
     .menu {
         display: flex;
         flex-direction: column;
@@ -268,8 +274,8 @@
         padding: 1rem 0;
         cursor: pointer;
         position: relative;
-        left: 34rem;
-        padding-top: 3.5rem;
+        left: 36rem;
+        padding-top: 3rem;
         font-family: sans-serif;
     }
 
@@ -315,16 +321,16 @@
 
     .nav{
         position: relative;
-        bottom: 85px;
+        bottom: 70px;
     }
 
     .logo {
-        width: 100px;
+        width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 40px;
         justify-content: left;
         z-index: 1;
         animation: none;
@@ -397,11 +403,11 @@
     }
 }
 
-@media (min-width:641px){
+@media (min-width:641px){ /* Finalizado */
 
     .ret-faq{
         position: relative;
-        top: 30px;
+        top: -30px;
         left: 50px;
         animation: none;
     }
@@ -414,11 +420,29 @@
         top: 30px;
         display: flex;
         padding: 15px;
-        position: relative;
-        right: 4rem;
+        margin-left: -20px;
         text-decoration: none;
         color: white;
+        position: relative;
+        right: 2rem;
         font-family: 'Istok Web', sans-serif;
+    }
+
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
+    .logo {
+        width: 130px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 16px;
+        left: 40px;
+        justify-content: left;
+        z-index: 1;
+        animation: none;
     }
 
     
@@ -431,17 +455,6 @@
     @keyframes moveRight {
         0% {left: -80px;}
         100% {left: -30px;}
-    }
-
-    .logo{
-        width: 130px;
-        height: auto;
-        display: flex;
-        position: relative;
-        top: 90px;
-        left: 55px;
-        justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
     }
 
     @keyframes fadeIn {
@@ -477,7 +490,7 @@
     .container-faq{
         background-image: url(../img/bg1.jpg);
         background-size: cover;
-        height: 1000px 
+        height: 2200px 
     }
 
     .footer{
@@ -489,14 +502,14 @@
         font-family: 'Montserrat', sans-serif;
         background-color: #d9d9d9;
         height: 30px;
-        top: 78rem;
+        top: 158rem;
         width: 105%;
     }
 
     .wrapper{
         background-color: #d9d9d9;
         margin-top: 100px;
-        margin-left: 14rem;
+        margin-left: 9rem;
         padding: 15px 40px;
         border-radius: 5px;
         box-shadow: 0 15px 25px rgba(0,0,50,0.2);
@@ -504,13 +517,13 @@
     }
 }
 
-@media (min-width:961px){
+@media (min-width:961px){ /* Finalizado */
 
     .ret-faq{
         position: relative;
-        top: 30px;
+        top: -30px;
         left: 65px;
-        animation: none;
+        animation: none
     }
 
     .btn-menu {
@@ -540,15 +553,21 @@
         100% {left: -30px;}
     }
 
-    .logo{
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
+    .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 90px;
+        top: 15px;
         left: 55px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
+        z-index: 1;
+        animation: moveRight 1s;
     }
 
     @keyframes fadeIn {
@@ -584,7 +603,7 @@
     .container-faq{
         background-image: url(../img/bg1.jpg);
         background-size: cover;
-        height: 1000px 
+        height: 1800px 
     }
 
     .footer{
@@ -596,18 +615,18 @@
         font-family: 'Montserrat', sans-serif;
         background-color: #d9d9d9;
         height: 30px;
-        top: 78rem;
+        top: 132rem;
         width: 105%;
     }
 }
 
-@media (min-width:1025px){
+@media (min-width:1025px){ /* Finalizado */
 
     .ret-faq{
         position: relative;
-        top: 30px;
-        left: 70px;
-        animation: none;
+        top: -50px;
+        left: 55px;
+        animation: moveRight 1s;
     }
 
     .btn-menu {
@@ -637,15 +656,21 @@
         100% {left: -30px;}
     }
 
-    .logo{
+    .nav{
+        position: relative;
+        bottom: 80px;
+    }
+
+    .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 90px;
+        top: 20px;
         left: 55px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
+        z-index: 1;
+        animation: moveRight 1s;
     }
 
     @keyframes fadeIn {
@@ -681,7 +706,7 @@
     .container-faq{
         background-image: url(../img/bg1.jpg);
         background-size: cover;
-        height: 1000px 
+        height: 1600px 
     }
 
     .footer{
@@ -693,12 +718,12 @@
         font-family: 'Montserrat', sans-serif;
         background-color: #d9d9d9;
         height: 30px;
-        top: 78rem;
+        top: 119.5rem;
         width: 105%;
     }
 }
 
-@media (min-width:1281px){
+@media (min-width:1281px){ /* Finalizado */
 
     .footer{
         padding-left: 5px;
@@ -715,8 +740,8 @@
 
     .ret-faq{
         position: relative;
-        top: 30px;
-        left: 85px;
+        top: 0px;
+        left: 105px;
         animation: none;
     }
 
@@ -729,14 +754,16 @@
         100%{left: 100px;}
     }
 
-    nav ul li a{
+    nav ul li a {
         top: 30px;
         display: flex;
+        height: 0px;
         padding: 15px;
+        text-decoration: none;
+        color: aliceblue;
         position: relative;
         right: 7rem;
-        text-decoration: none;
-        color: white;
+        font-size: 17px;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -762,11 +789,11 @@
         height: auto;
         display: flex;
         position: relative;
-        top: 10px;
-        left: 40px;
+        top: 20px;
+        left: 100px;
         justify-content: left;
         z-index: 1;
-        animation: none;
+        animation: moveRight 1s;
     }
 
     @keyframes fadeIn {
@@ -776,7 +803,7 @@
     
     @keyframes moveRight {
         0% {left: -80px;}
-        100% {left: 55px;}
+        100% {left: 100px;}
     }
 
     .container{
@@ -802,10 +829,13 @@
     .faq-section{
         background-image: url(../img/bg1.jpg);
         background-size: cover;
-        height: 1200px;
+        height: 1300px;
     }
 
-    
+    .wrapper{
+        margin-top: 100px;
+        margin-left: 30rem;
+    }
 
     .footer{
         padding-left: 5px;
@@ -816,7 +846,7 @@
         font-family: 'Montserrat', sans-serif;
         background-color: #d9d9d9;
         height: 30px;
-        top: 78rem;
+        top: 89rem;
         width: 105%;
     }
 }

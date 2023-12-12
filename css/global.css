@@ -24,8 +24,9 @@ nav ul{
 }
 
 nav ul li a:hover{
+    color: black;
     cursor:pointer;
-    text-decoration: underline;
+    text-decoration: black;
 }
 
 .logo{

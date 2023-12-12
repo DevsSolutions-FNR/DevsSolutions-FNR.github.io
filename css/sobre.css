@@ -1,5 +1,6 @@
-.ret_sobre{
+.ret_sobre {
     position: relative;
+    bottom: 30px;
     height: 80px;
     width: 150px;
     text-align: center;
@@ -14,32 +15,37 @@
     animation: moveDireita 2s, fadeIn 1s;
 }
 
-@keyframes moveDireita{
-    0% {left: -100px;}
-    100%{left: 0px;}
+@keyframes moveDireita {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 0px;
+    }
 }
 
-h3{
+h3 {
     color: black;
     font-family: 'Istok Web', sans-serif;
     padding-left: 30px;
 }
 
-li{
+li {
     color: black;
     font-family: 'Istok Web', sans-serif;
     font-weight: 400;
     padding-left: 40px;
 }
 
-ol{
+ol {
     color: black;
     font-family: 'Istok Web', sans-serif;
     font-weight: 400;
-    padding-left: 40px; 
+    padding-left: 40px;
 }
 
-@media (min-width:320px) and (max-width:480px)  { 
+@media (min-width:320px) and (max-width:480px) { /* Finalizado */
 
     .menu {
         display: flex;
@@ -58,14 +64,14 @@ ol{
         transition: 0.5s;
     }
 
-    .menu a{
-    display: block;
-    padding: 1rem 0;
-    margin-inline: 1rem;
-    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
-    border-radius: 0;
-    font-family: 'Istok Web', sans-serif;
-    color: black;
+    .menu a {
+        display: block;
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+        font-family: 'Istok Web', sans-serif;
+        color: black;
     }
 
     .btn-menu {
@@ -120,11 +126,11 @@ ol{
         top: -0.4375rem;
     }
 
-    nav ul li a{
+    nav ul li a {
         display: none;
     }
 
-    .nav{
+    .nav {
         position: relative;
         bottom: 85px;
     }
@@ -140,32 +146,44 @@ ol{
         z-index: 1;
         animation: none;
     }
-    
+
     @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-    
+
     @keyframes moveRight {
-        0% {left: -80px;}
-        100% {left: -30px;}
+        0% {
+            left: -80px;
+        }
+
+        100% {
+            left: -30px;
+        }
     }
-    .container{
+
+    .container {
         background-image: url(../img/bg1.jpg);
         height: 220vh;
         width: 100vw;
         margin-left: -10px;
         margin-top: -15px;
-    }   
-    .img_cigarro1{
+    }
+
+    .img_cigarro1 {
         position: relative;
         width: 35rem;
         bottom: -5rem;
-        
+
     }
 }
 
-@media (min-width:481px) and (max-width: 640px)  { 
+@media (min-width:481px) and (max-width: 640px) { /* Finalizado */
 
     .btn-menu {
         display: none;
@@ -188,14 +206,14 @@ ol{
         transition: 0.5s;
     }
 
-    .menu a{
-    display: block;
-    padding: 1rem 0;
-    margin-inline: 1rem;
-    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
-    border-radius: 0;
-    font-family: 'Istok Web', sans-serif;
-    color: black;
+    .menu a {
+        display: block;
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+        font-family: 'Istok Web', sans-serif;
+        color: black;
     }
 
     .btn-menu {
@@ -250,11 +268,11 @@ ol{
         top: -0.4375rem;
     }
 
-    nav ul li a{
+    nav ul li a {
         display: none;
     }
 
-    .nav{
+    .nav {
         position: relative;
         bottom: 85px;
     }
@@ -270,42 +288,54 @@ ol{
         z-index: 1;
         animation: none;
     }
-    
+
     @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-    
+
     @keyframes moveRight {
-        0% {left: -80px;}
-        100% {left: -30px;}
+        0% {
+            left: -80px;
+        }
+
+        100% {
+            left: -30px;
+        }
     }
-    .container{
+
+    .container {
         background-image: url(../img/bg1.jpg);
         height: 220vh;
         width: 100vw;
         margin-left: -10px;
         margin-top: -15px;
-    }   
-    .img_cigarro1{
+    }
+
+    .img_cigarro1 {
         position: relative;
         width: 35rem;
         bottom: -5rem;
-        
-    }
- }
 
-@media (min-width:641px)  { 
+    }
+}
+
+@media (min-width:641px) { /* Finalizado */
 
     .btn-menu {
         display: none;
     }
 
-    nav ul li a{
+    nav ul li a {
         top: 30px;
         display: flex;
         padding: 15px;
-        margin-left: -40px;
+        margin-left: -60px;
         text-decoration: none;
         color: white;
         position: relative;
@@ -319,49 +349,82 @@ ol{
     }
 
     .logo {
-        width: 100px;
+        width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 10px;
+        top: 20px;
         left: 10px;
         justify-content: left;
         z-index: 1;
         animation: none;
-    }
-    
+    }  
+
     @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-    
+
     @keyframes moveRight {
-        0% {left: -80px;}
-        100% {left: -30px;}
+        0% {
+            left: -80px;
+        }
+
+        100% {
+            left: -30px;
+        }
     }
-    .container{
+
+    .container {
         background-image: url(../img/bg1.jpg);
         height: 200vh;
         width: 100vw;
         margin-left: -10px;
         margin-top: -15px;
-    }   
-    .img_cigarro1{
+    }
+
+    .img_cigarro1 {
         position: relative;
         width: 35rem;
         bottom: -3rem;
-        
     }
- }
 
-@media (min-width:961px)  { 
+    .h3_tab {
+        position: relative;
+        right: 30px;
+    }
+
+    .tab_ol {
+        position: relative;
+        right: 40px;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    .li_tab {
+        font-size: 25px;
+    }
+
+    ol {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:961px) { /* Finalizado */
 
     .btn-menu {
         display: none;
     }
 
 
-    nav ul li a{
+    nav ul li a {
         top: 30px;
         display: flex;
         padding: 15px;
@@ -371,9 +434,10 @@ ol{
         position: relative;
         right: 1rem;
         font-family: 'Istok Web', sans-serif;
+        font-size: 17px;
     }
 
-    .logo{
+    .logo {
         width: 130px;
         height: auto;
         display: flex;
@@ -383,38 +447,72 @@ ol{
         justify-content: left;
         animation: moveRight 1s, fadeIn 1s;
     }
-    
+
     @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-    
+
     @keyframes moveRight {
-        0% {left: -80px;}
-        100% {left: 0px;}
+        0% {
+            left: -80px;
+        }
+
+        100% {
+            left: 0px;
+        }
     }
-    .container{
+
+    .container {
         background-image: url(../img/bg1.jpg);
-        height: 220vh;
+        height: 180vh;
         width: 100vw;
         margin-left: -10px;
         margin-top: -15px;
-    }   
-    .img_cigarro1{
+    }
+
+    .img_cigarro1 {
         position: relative;
         width: 35rem;
         bottom: -5rem;
-        
-    }
- }
 
-@media (min-width:1025px) {
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    .li_tab {
+        font-size: 25px;
+    }
+
+    ol {
+        font-size: 20px;
+    }
+
+    .h3_tab {
+        position: relative;
+        right: 40px;
+    }
+
+    .tab_ol {
+        position: relative;
+        right: 40px;
+    }
+}
+
+@media (min-width:1025px) { /* Finalizado */
 
     .btn-menu {
         display: none;
     }
 
-    nav ul li a{
+    nav ul li a {
         top: 30px;
         display: flex;
         padding: 15px;
@@ -426,90 +524,155 @@ ol{
         font-family: 'Istok Web', sans-serif;
     }
 
-    .logo{
-        width: 100px;
+    .logo {
+        width: 130px;
         height: auto;
         display: flex;
         position: relative;
         top: 15px;
-        left: 10px;
+        left: 0px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
-    }
-    
+        z-index: 1;
+        animation: none;
+    }   
+
     @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-    
+
     @keyframes moveRight {
-        0% {left: -80px;}
-        100% {left: 10px;}
+        0% {
+            left: -80px;
+        }
+
+        100% {
+            left: 10px;
+        }
     }
-    .container{
+
+    .container {
         background-image: url(../img/bg1.jpg);
-        height: 180vh;
+        height: 130vh;
         width: 100vw;
         margin-left: -10px;
         margin-top: -15px;
-    }   
-    .img_cigarro1{
+    }
+
+    .img_cigarro1 {
+        display: none;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .li_tab {
+        font-size: 25px;
+    }
+
+    ol {
+        font-size: 20px;
+    }
+
+    .h3_tab {
         position: relative;
-        width: 35rem;
-        bottom: -5rem;
-        
+        right: 30px;
+    }
+
+    .tab_ol {
+        position: relative;
+        right: 40px;
     }
 }
 
-@media (min-width:1281px) {
+@media (min-width:1281px) { /* Finalizado */
 
     .btn-menu {
         display: none;
     }
 
-   nav ul li a {
-    top: 30px;
-    display: flex;
-    padding: 15px;
-    margin-left: -40px;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    right: 1rem;
-    font-family: 'Istok Web', sans-serif;
+    nav ul li a {
+        top: 30px;
+        display: flex;
+        padding: 15px;
+        margin-left: -40px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        right: 1rem;
+        font-family: 'Istok Web', sans-serif;
     }
 
-    .logo{
+    .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 10px;
+        top: 15px;
         left: -10px;
         justify-content: left;
         animation: moveRight 1s, fadeIn 1s;
     }
-    
+
     @keyframes fadeIn {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
-    
+
     @keyframes moveRight {
-        0% {left: -80px;}
-        100% {left: -10px;}
+        0% {
+            left: -80px;
+        }
+
+        100% {
+            left: -10px;
+        }
     }
-    .container{
+
+    .container {
         background-image: url(../img/bg1.jpg);
         height: 100vh;
         width: 100vw;
         margin-left: -10px;
         margin-top: -15px;
-    }   
+    }
 
-    .img_cigarro1{
+    .img_cigarro1 {
         position: absolute;
-        left: 60rem;
-        bottom: 10rem;
+        left: 76rem;
+        bottom: 19rem;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .li_tab {
+        font-size: 25px;
+    }
+
+    ol {
+        font-size: 20px;
+    }
+
+    .h3_tab {
+        position: relative;
+        right: 30px;
+    }
+
+    .tab_ol {
+        position: relative;
+        right: 40px;
     }
 }

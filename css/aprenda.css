@@ -1,5 +1,6 @@
 .ret-aprenda{
     position: relative;
+    bottom: 30px;
     height: 80px;
     width: 200px;
     text-align: center;
@@ -38,7 +39,7 @@ h2{
     100%{left: 0px;}
 }
 
-@media (min-width:320px) and (max-width:480px) {
+@media (min-width:320px) and (max-width:480px) { /* Finalizado */
     .menu {
         display: flex;
         flex-direction: column;
@@ -148,7 +149,7 @@ h2{
     }
 }
 
-@media (min-width:481px) and (max-width: 640px)  { 
+@media (min-width:481px) and (max-width: 640px)  { /* Finalizado */ 
     .menu {
         display: flex;
         flex-direction: column;
@@ -269,16 +270,16 @@ h2{
     }
  }
 
-@media (min-width:641px)  { 
+@media (min-width:641px)  {  /* Finalizado */
     nav ul li a{
         top: 0px;
         display: flex;
-        height: 0px;
         padding: 15px;
+        margin-left: -20px;
         text-decoration: none;
         color: white;
         position: relative;
-        right: 7rem;
+        right: 5rem;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -319,7 +320,7 @@ h2{
     }
  }
 
-@media (min-width:961px) {
+@media (min-width:961px) { /* Finalizado */
     nav ul li a{
         top: 0px;
         display: flex;
@@ -329,6 +330,7 @@ h2{
         color: white;
         position: relative;
         right: 7rem;
+        font-size: 17px;
         font-family: 'Istok Web', sans-serif;
     }
 
@@ -362,14 +364,22 @@ h2{
 
     .container{
         background-image: url(../img/bg1.jpg);
-        height: 160vh;
+        height: 140vh;
         width: 110vw;
         margin-left: -10px;
         margin-top: -15px;
     }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
  }
 
-@media (min-width:1025px) {
+@media (min-width:1025px) { /* Finalizado */
     nav ul li a{
         top: 0px;
         display: flex;
@@ -394,7 +404,7 @@ h2{
         display: flex;
         position: relative;
         top: 10px;
-        left: 10px;
+        left: 0px;
         justify-content: left;
         z-index: 1;
         animation: none;
@@ -417,9 +427,17 @@ h2{
         margin-left: -10px;
         margin-top: -15px;
     }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
 }
 
-@media (min-width:1281px) {
+@media (min-width:1281px) { /* Finalizado */
 
     .btn-menu {
         display: none;
@@ -443,8 +461,8 @@ h2{
         height: auto;
         display: flex;
         position: relative;
-        top: 20px;
-        left: 10px;
+        top: 15px;
+        left: -10px;
         justify-content: left;
         animation: moveRight 1s, fadeIn 1s;
     }
@@ -456,7 +474,7 @@ h2{
     
     @keyframes moveRight {
         0% {left: -80px;}
-        100% {left: 10px;}
+        100% {left: -10px;}
     }
 
     .container{
@@ -465,5 +483,13 @@ h2{
         width: 110vw;
         margin-left: -10px;
         margin-top: -15px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
     }
 }
