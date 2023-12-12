@@ -221,19 +221,30 @@
         display: none;
     }
 
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
     .logo {
-        width: 100px;
+        width: 130px;
         height: auto;
         display: flex;
-        position: absolute;
-        top: 0px;
-        left: -30px;
+        position: relative;
+        top: 10px;
+        left: 10px;
         justify-content: left;
+        z-index: 1;
         animation: none;
-    }
+    }   
 
     nav ul li a {
         display: none;
+    }
+
+    .footer{
+        position: relative;
+        left: -0.5rem;
     }
 }
 
@@ -372,16 +383,22 @@
         display: none;
     }
     
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
     .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 88px;
-        left: -30px;
+        top: 10px;
+        left: 15px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
-    }
+        z-index: 1;
+        animation: none;
+    }   
 }
 
 @media (min-width:641px) {
@@ -452,16 +469,22 @@
         font-family: 'Istok Web', sans-serif;
     }
 
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
     .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 88px;
-        left: -30px;
+        top: 20px;
+        left: 10px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
-    }
+        z-index: 1;
+        animation: none;
+    }   
 }
 
 @media (min-width:961px) {
@@ -534,16 +557,22 @@
         font-family: 'Istok Web', sans-serif;
     }
 
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
     .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 88px;
-        left: -30px;
+        top: 20px;
+        left: 40px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
-    }
+        z-index: 1;
+        animation: none;
+    }   
 
     @keyframes fadeIn {
         0% {
@@ -637,16 +666,22 @@
         font-family: 'Istok Web', sans-serif;
     }
 
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
     .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 88px;
-        left: -30px;
+        top: 20px;
+        left: 40px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
-    }
+        z-index: 1;
+        animation: none;
+    }   
 
     @keyframes fadeIn {
         0% {
@@ -738,15 +773,21 @@
         font-family: 'Istok Web', sans-serif;
     }
 
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
     .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 88px;
-        left: -30px;
+        top: 20px;
+        left: 0px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
+        z-index: 1;
+        animation: none;
     }
 
     @keyframes fadeIn {
