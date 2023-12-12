@@ -78,7 +78,7 @@ h2{
         cursor: pointer;
         position: relative;
         left: 23rem;
-        padding-top: 3rem;
+        padding-top: 3.5rem;
         font-family: sans-serif;
     }
 
@@ -122,9 +122,26 @@ h2{
         display: none;
     }
 
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+        display: flex;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        justify-content: left;
+        z-index: 1;
+        animation: none;
+    }
+
     .container{
         background-image: url(../img/bg1.jpg);
-        height: 400vh;
+        height: 500vh;
         width: 100vw;
         margin-left: -10px;
         margin-top: -15px;
@@ -171,7 +188,7 @@ h2{
         cursor: pointer;
         position: relative;
         left: 34rem;
-        padding-top: 3rem;
+        padding-top: 3.5rem;
         font-family: sans-serif;
     }
 
@@ -216,15 +233,21 @@ h2{
     }
 
 
-    .logo{
-        width: 130px;
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
+    .logo {
+        width: 100px;
         height: auto;
         display: flex;
         position: relative;
-        top: 90px;
-        left: -30px;
+        top: 10px;
+        left: 10px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
+        z-index: 1;
+        animation: none;
     }
     
     @keyframes fadeIn {
@@ -239,7 +262,7 @@ h2{
 
     .container{
         background-image: url(../img/bg1.jpg);
-        height: 100vh;
+        height: 300vh;
         width: 110vw;
         margin-left: -10px;
         margin-top: -15px;
@@ -260,15 +283,21 @@ h2{
     }
 
 
-    .logo{
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
+    .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 90px;
-        left: -30px;
+        top: 10px;
+        left: 0px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
+        z-index: 1;
+        animation: none;
     }
     
     @keyframes fadeIn {
@@ -283,7 +312,7 @@ h2{
 
     .container{
         background-image: url(../img/bg1.jpg);
-        height: 100vh;
+        height: 170vh;
         width: 110vw;
         margin-left: -10px;
         margin-top: -15px;
@@ -304,15 +333,21 @@ h2{
     }
 
 
-    .logo{
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
+    .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 90px;
-        left: -30px;
+        top: 10px;
+        left: 0px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
+        z-index: 1;
+        animation: none;
     }
     
     @keyframes fadeIn {
@@ -327,7 +362,7 @@ h2{
 
     .container{
         background-image: url(../img/bg1.jpg);
-        height: 100vh;
+        height: 160vh;
         width: 110vw;
         margin-left: -10px;
         margin-top: -15px;
@@ -348,15 +383,21 @@ h2{
     }
 
 
-    .logo{
+    .nav{
+        position: relative;
+        bottom: 85px;
+    }
+
+    .logo {
         width: 130px;
         height: auto;
         display: flex;
         position: relative;
-        top: 90px;
-        left: -30px;
+        top: 10px;
+        left: 10px;
         justify-content: left;
-        animation: moveRight 1s, fadeIn 1s;
+        z-index: 1;
+        animation: none;
     }
     
     @keyframes fadeIn {
@@ -402,8 +443,8 @@ h2{
         height: auto;
         display: flex;
         position: relative;
-        top: 90px;
-        left: -30px;
+        top: 20px;
+        left: 10px;
         justify-content: left;
         animation: moveRight 1s, fadeIn 1s;
     }
@@ -415,7 +456,7 @@ h2{
     
     @keyframes moveRight {
         0% {left: -80px;}
-        100% {left: -30px;}
+        100% {left: 10px;}
     }
 
     .container{
